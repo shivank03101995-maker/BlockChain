@@ -15,4 +15,8 @@ corrrect cc command
 
 ./network.sh cc invoke -c universitychannel -ccn universityrecord -ccic '{"Args":["CreateAsset","asset7","purple","20","Alice","900"]}'
 /network.sh cc invoke -c universitychannel -ccn universityrecord -ccic '{"Args":["CreateAsset","asset8","orange","25","Bob","1000"]}'
-./network.sh cc query -c universitychannel -ccn universityrecord -ccqc '{"Args":["GetAllAssets"]}'
+./network.sh cc query -c universitychannel -ccn universityrecord -ccqc '{"Args":["GetAllAssets"]}'   
+
+
+Deploy chaincode command:
+./network.sh deployCC   -ccn admissioncc   -ccp ../asset-transfer-basic/chaincode-javascript   -ccl javascript   -c university
